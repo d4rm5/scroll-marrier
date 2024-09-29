@@ -1,67 +1,17 @@
-## Foundry
+# Scroll Marrier 📜
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+My project for Scroll x Alchemy Mini Hackathon! dApp for marry on Scroll chain!
 
-Foundry consists of:
+My motivation was keep learning in my smart contract development journey. In this project I learned about many things like OpenZeppelin contratcs, EIP-712 sigantures, ERC-712 tokens, Soulbound NFTs, Foundry usage, Wagmi hooks and RainBow Kit configuration.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Structure
 
-## Documentation
+### This repo
+Foundry project with two contracts:
+1. `Marriage.sol`: a soulbound NFT that contains marriage data.
+2. `MarriageFactory.sol`: a factory that generates marriages using EIP-712 signatures.
 
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
-# scroll-marrier
+### [Front-end](https://github.com/d4rm5/scroll-marrier-react)
+Vite + React + Viem + RainbowKit project with two pages:
+1. Scroll Marrier main: a page to start a marriage process.
+2. Signature page: a page to sign marriage.
